@@ -9,9 +9,14 @@ url, prefix = sys.argv[1], sys.argv[2]
 BANNED = ['至少 3 个', '应缺失', 'Pax7', '升升级', '学位课题', '黄金组合']
 report = {'url': url}
 with sync_playwright() as p:
-    b = p.chromium.launch()
+    import os, urllib.parse
+    kw = {}
+    if url.startswith('https://') and os.environ.get('HTTPS_PROXY'):
+        u = urllib.parse.urlparse(os.environ['HTTPS_PROXY'])
+        kw['proxy'] = {'server': f'{u.scheme}://{u.hostname}:{u.port}', 'username': urllib.parse.unquote(u.username or ''), 'password': urllib.parse.unquote(u.password or '')}
+    b = p.chromium.launch(**kw)
     for w, h in [(390, 844), (1440, 900)]:
-        ctx = b.new_context(viewport={'width': w, 'height': h}, device_scale_factor=2 if w == 390 else 1,
+        ctx = b.new_context(ignore_https_errors=True, viewport={'width': w, 'height': h}, device_scale_factor=2 if w == 390 else 1,
                             user_agent=('Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1' if w == 390 else None))
         pg = ctx.new_page()
         errs, bad = [], []
