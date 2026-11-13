@@ -1,8 +1,8 @@
 cff-version: 1.2.0
-message: "If you use this guide, please cite it as below, and cite the original studies it summarises (see references/referencesv1.1.json)."
+message: "If you use this guide, please cite it as below, and cite the original studies it summarises (see 验证/参考文献v1.1.json)."
 type: dataset
 title: "细胞外囊泡提取方法与优化指南 / Extracellular Vesicle Isolation Methods: An Interactive Chinese Guide"
-version: 1.1.0
+version: 1.2.0
 date-released: 2026-11-13
 authors:
   - family-names: Ding
@@ -10,7 +10,7 @@ authors:
     affiliation: "Affiliated Hospital of Jiangnan University; Soochow University"
 repository-code: "https://github.com/TUANZIDING/ev-isolation-guide"
 url: "https://tuanziding.github.io/ev-isolation-guide/"
-license: CC-BY-4.0
+license: CC-BY-NC-4.0
 keywords:
   - extracellular vesicles
   - exosomes
