@@ -1,8 +1,8 @@
 cff-version: 1.2.0
-message: "If you use this guide, please cite it as below, and cite the original studies it summarises (see references/referencesv1.0.json)."
+message: "If you use this guide, please cite it as below, and cite the original studies it summarises (see references/referencesv1.1.json)."
 type: dataset
 title: "细胞外囊泡提取方法与优化指南 / Extracellular Vesicle Isolation Methods: An Interactive Chinese Guide"
-version: 1.0.0
+version: 1.1.0
 date-released: 2026-11-13
 authors:
   - family-names: Ding
