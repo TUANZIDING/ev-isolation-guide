@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this guide, please cite it as below, and cite the original studies it summarises (see references/referencesv1.0.json)."
+type: dataset
+title: "细胞外囊泡提取方法与优化指南 / Extracellular Vesicle Isolation Methods: An Interactive Chinese Guide"
+version: 1.0.0
+date-released: 2026-11-13
+authors:
+  - family-names: Ding
+    given-names: Haixiang
+    affiliation: "Affiliated Hospital of Jiangnan University; Soochow University"
+repository-code: "https://github.com/TUANZIDING/ev-isolation-guide"
+url: "https://tuanziding.github.io/ev-isolation-guide/"
+license: CC-BY-4.0
+keywords:
+  - extracellular vesicles
+  - exosomes
+  - EV isolation
+  - MISEV2023
+  - ultracentrifugation
+  - size-exclusion chromatography
+  - methods
